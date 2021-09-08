@@ -1,0 +1,18 @@
+#nav-bar{
+  display: flex;
+  position: fixed;
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  font-family: bungee, sans-serif;
+  font-size:  30px;
+  color: #ffffff;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  align-items: center;
+}
+
+
+
+
+
