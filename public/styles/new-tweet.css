@@ -1,0 +1,44 @@
+.container{
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-content: space-between;
+}
+.new-tweet{
+  display: flex;
+  border-radius: 5px;
+  padding-top: 1px;
+  background-color: #d4baa8;
+  margin: 0 2em;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.new-tweet h2 {
+  margin: 10px;
+  
+  font-size: smaller;
+}
+
+label{
+  padding: 10px;
+  position: relative;
+  font-size: smaller;
+}
+  
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 5px solid black;
+  position: relative;
+  background-color: #d4baa8;
+}
+button {
+  background-color:#4056A1;
+  color: #eeeeee;
+}
+.counterbutton {
+  display: flex;
+  justify-content: space-between;
+}
