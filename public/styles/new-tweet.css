@@ -3,6 +3,7 @@
   flex-flow: wrap column;
   align-items: center;
   justify-content: space-between;
+  font-family: source sans pro, sans-serif;
 }
 .new-tweet{
   display: flex;
@@ -13,7 +14,6 @@
   flex-flow: wrap column;
   align-items: center;
   justify-content: space-between;
-  
 }
 .new-tweet h2 {
   margin: 10px;
