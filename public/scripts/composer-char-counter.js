@@ -5,7 +5,7 @@ $(document).ready(function() {
   textArea.addEventListener("keyup", function(event)  {
     let characters = textArea.value.split('');
     wordCount.innerText = 140 - characters.length;
-
+    console.log(characters);
     if (wordCount.innerText < 0) {
       wordCount.style.color = 'red';
     } else {
