@@ -21,6 +21,11 @@
     <script src="https://kit.fontawesome.com/d8c7f69fbc.js" crossorigin="anonymous"></script>
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--JQuery-->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
 
 
     <!-- App JS -->
@@ -42,7 +47,7 @@
       </div>
       <br>
       <div>
-          <h2 class="name">Your Name</h2>
+          <h2 class="name">James May</h2>
       </div>
   </header>
 
@@ -55,10 +60,13 @@
           <textarea name="text" id="tweet-text"></textarea>
           <div class="counterbutton">
             <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+            <output name="counter" class="counter" for="tweet-text" id="word-count">140</output>
           </div>
         </form>
       </section>
     </main>
+    <script src="scripts/composer-char-counter.js"></script>
   </body>
 </html>
+
+
