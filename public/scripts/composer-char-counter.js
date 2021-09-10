@@ -1,15 +1,15 @@
 $(document).ready(function() {
   // --- our code goes here ---
   const textArea = document.querySelector('main textarea');
-  const wordCount = document.getElementById('word-count')
-  textArea.addEventListener("keyup", function(event)  {
+  const charCount = document.getElementById('word-count')
+  const maxCharacters = 140;
+  textArea.addEventListener("keydown", function(event)  {
     let characters = textArea.value.split('');
-    wordCount.innerText = 140 - characters.length;
-    console.log(characters);
-    if (wordCount.innerText < 0) {
-      wordCount.style.color = 'red';
+    charCount.innerText = maxCharacters - characters.length;
+    if (charCount.innerText < 0) {
+      charCount.style.color = 'red';
     } else {
-      wordCount.style.color = '';
+      charCount.style.color = '';
     }
     
   })
