@@ -1,0 +1,39 @@
+.tweets{
+  display: flex;
+  background-color: #bbaa9f;
+  border: 0.5px solid black;
+  flex-direction: column;
+  width: 45%;
+}
+.tweets:hover{
+  box-shadow: 10px 10px 0px rgb(0 0 0 /0.2);
+}
+
+.tweets header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-photo {
+  width: 30px;
+}
+.tweet-container{
+  border-bottom: 5px solid black;
+  margin: 0 15px;
+}
+
+.tweets footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+#flag:hover{
+  color: gold;
+}
+#heart:hover{
+  color: gold;
+}
+#retweet:hover{
+  color: gold;
+}
