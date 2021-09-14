@@ -4,14 +4,14 @@
   align-items: center;
   justify-content: space-between;
   font-family: source sans pro, sans-serif;
-  background-color: #bbaa9f;
+  background-color: #adc7d8;
   
 }
 
 .new-tweet{
   display: flex;
   padding-top: 1px;
-  background-color: #bbaa9f;
+  background-color: #adc7d8;
   margin: 0 2em;
   flex-flow: wrap column;
   align-items: center;
@@ -35,7 +35,7 @@ textarea {
   border: none;
   border-bottom: 5px solid black;
   position: relative;
-  background-color: #bbaa9f;
+  background-color: #adc7d8;
 }
 button {
   background-color:#4056A1;
