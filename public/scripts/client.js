@@ -12,19 +12,25 @@ $(document).ready(function (){
     // takes return value and appends it to the tweets container
     for (let item of tweets) {
       let $tweet = createTweetElement(item);
-      $('#tweets-container').append($tweet);
+      $('#tweets-container').prepend($tweet);
       
     };
 
   }
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
 
   const createTweetElement = function(tweetObject){ 
-    
+
+    let safeText = escape(tweetObject["content"]["text"]);
     let $tweet = `<article class="tweets">
     <header>
     <h5><img class="profile-photo" src="${tweetObject["user"]["avatars"]}">${tweetObject["user"]["name"]}</h5>
     <h6>${tweetObject["user"]["handle"]}</h6></header>
-    <p class="tweet-container">${tweetObject["content"]["text"]}</p>
+    <p class="tweet-container">${safeText}</p>
     <footer class="tweet-footer">
           <div>${tweetObject["created_at"]}</div>
           <div class="icons">
@@ -37,36 +43,53 @@ $(document).ready(function (){
     
     </article>`
     
-
+    
     return $tweet;
   }
-  // Test / driver code (temporary). Eventually will get this from the server.
-  const data = [
-    {
-      "user": {
-        "name": "Newton",
-        "avatars": "https://i.imgur.com/73hZDYK.png"
-        ,
-        "handle": "@SirIsaac"
-      },
-      "content": {
-        "text": "If I have seen further it is by standing on the shoulders of giants"
-      },
-      "created_at": 1461116232227
-    },
-    {
-      "user": {
-        "name": "Descartes",
-        "avatars": "https://i.imgur.com/nlhLi3I.png",
-        "handle": "@rd" },
-      "content": {
-        "text": "Je pense , donc je suis"
-      },
-      "created_at": 1461113959088
+  
+  
+  const form = $('#submit-tweet');
+  
+  
+  form.on("submit", function(event) {
+    event.preventDefault();
+    const data = $(this).serialize();
+    const serializedData = decodeURI(data);
+    console.log(serializedData);
+    console.log(serializedData.length);
+    if (serializedData.length < 6) {
+      alert('Tweet should not be empty!')
+    } else if (serializedData.length > 145) {
+      alert('Tweet should be less than 140 characters!')
+    } else {
+      $.post('/tweets', serializedData)
+      .then(() => {
+        loadTweets();
+      });
+         
     }
-  ]
+  });
+
+  const loadTweets = function() {$.ajax({
+    url: '/tweets',
+    method: "GET",
+    dataType: "json",
+    success: (tweets) => {
+      console.log(tweets);
+      renderTweets(tweets);
+    },
+    error: (error) => {
+      console.log(error);
+    }
+
+  })}
+  loadTweets();
+
+
  
-  renderTweets(data);
+
+ 
+
 });
 
 

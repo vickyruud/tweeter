@@ -10,25 +10,37 @@
 .tweets:hover{
   box-shadow: 10px 10px 0px rgb(0 0 0 /0.2);
 }
+.tweet-container{
+  border-bottom: 5px solid black;
+  margin: 0 15px;
+  padding: 10px;
+}
+
+#tweets-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  background-color: #adc7d8;;
+  margin: 0 auto;
+}
 
 .tweets header {
   display: flex;
   justify-content: space-between;
+  margin: 10px;
 }
 
 .profile-photo {
   width: 30px;
 }
-.tweet-container{
-  border-bottom: 5px solid black;
-  margin: 0 15px;
-}
+
 
 .tweets footer {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  margin: 0;
+  margin: 10px;
   padding: 0;
 }
 
