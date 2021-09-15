@@ -25,6 +25,9 @@ $(document).ready(function (){
 
   const createTweetElement = function(tweetObject){ 
 
+    
+    let sinceTweet = timeago.format(tweetObject["created_at"]);
+
     let safeText = escape(tweetObject["content"]["text"]);
     let $tweet = `<article class="tweets">
     <header>
@@ -32,7 +35,7 @@ $(document).ready(function (){
     <h6>${tweetObject["user"]["handle"]}</h6></header>
     <p class="tweet-container">${safeText}</p>
     <footer class="tweet-footer">
-          <div>${tweetObject["created_at"]}</div>
+          <div>${sinceTweet}</div>
           <div class="icons">
             <i id="flag" class="fas fa-flag"></i>
             <i id="retweet" class="fas fa-retweet"></i>
