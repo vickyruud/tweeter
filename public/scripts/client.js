@@ -6,6 +6,14 @@
 
 $(document).ready(function (){
 
+  const composeFamily = $(".compose-family");
+  composeFamily.on("click", function() {
+    $(".new-tweet").slideToggle(500);
+    $("#compose-button").slideToggle(1000);
+    $("#compose-button").slideToggle(1000);
+    $("#tweet-text").focus();
+  })
+
   const renderTweets = function(tweets) {
     // loops through tweets
     // calls createTweetElement for each tweet
@@ -22,6 +30,16 @@ $(document).ready(function (){
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
+  
+  const resetForm = function () {
+    const field = document.getElementById("tweet-text");
+    const wordCount = document.getElementById("word-count");
+    field.value = '';
+    wordCount.value = 140;
+
+
+  }
+
 
   const createTweetElement = function(tweetObject){ 
 
@@ -56,20 +74,26 @@ $(document).ready(function (){
   
   form.on("submit", function(event) {
     event.preventDefault();
-    const data = $(this).serialize();
-    const serializedData = decodeURI(data);
-    console.log(serializedData);
-    console.log(serializedData.length);
-    if (serializedData.length < 6) {
-      alert('Tweet should not be empty!')
-    } else if (serializedData.length > 145) {
-      alert('Tweet should be less than 140 characters!')
+    
+    const serializedData = $(this).serialize();
+    const decodedData = decodeURIComponent(serializedData);
+    if (decodedData.length < 6) {
+      $("#empty").slideDown(1000);
+      $("#over140").slideUp(1000); 
+    } else if (decodedData.length > 145) {
+      $("#over140").slideDown(1000);
+      $("#empty").slideUp(1000);
     } else {
-      $.post('/tweets', serializedData)
+      $.post('/tweets', decodedData)
       .then(() => {
         loadTweets();
-      });
-         
+        resetForm();
+      })
+      .catch((error => {
+        console.log(error);
+      }))
+      $("#empty").slideUp(1000);
+      $("#over140").slideUp(1000);   
     }
   });
 
@@ -78,7 +102,6 @@ $(document).ready(function (){
     method: "GET",
     dataType: "json",
     success: (tweets) => {
-      console.log(tweets);
       renderTweets(tweets);
     },
     error: (error) => {
@@ -88,7 +111,7 @@ $(document).ready(function (){
   })}
   loadTweets();
 
-
+  
  
 
  

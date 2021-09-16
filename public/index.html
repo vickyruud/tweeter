@@ -34,7 +34,9 @@
       <span style="font-family: 'Bungee'">Tweeter</span>
       <div class="compose-family">
         <h3 class="compose">Write a new tweet</h3>
-        <i  class="fas fa-angle-double-down"></i>
+        <div>
+          <i  class="fas fa-angle-double-down" id="compose-button" ></i>
+        </div>
       </div>
     </nav>
     <header id="header">
@@ -49,7 +51,9 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">
+      <section class="new-tweet" style="display: none;">
+        <div class="error" id="over140" style="display:none;">Tweet should be less than 140 characters!</div>
+        <div class="error" id="empty" style="display:none;">Tweet should not be empty!</div>
         <h2>Compose Tweet</h2>
         <form id="submit-tweet">
           <label for="tweet-text">What are you humming about?</label>
