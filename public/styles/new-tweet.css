@@ -46,6 +46,15 @@ button {
   justify-content: space-between;
   font-family: bungee, sans-serif;
 }
-article.p {
-  color: maroon;
+
+#scroll-up {
+  color: #4056A1;
+  position: fixed;
+  align-self: flex-end;
+  max-width: 100%;
+  
+}
+
+#scroll-up:hover {
+  background-color: #000000;
 }
