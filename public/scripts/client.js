@@ -6,6 +6,7 @@
 
 $(document).ready(function (){
 
+//Toggles the write new tweet form  
   const composeFamily = $(".compose-family");
   composeFamily.on("click", function() {
     $(".new-tweet").slideToggle(500);
@@ -17,7 +18,7 @@ $(document).ready(function (){
   const renderTweets = function(tweets) {
     // loops through tweets
     // calls createTweetElement for each tweet
-    // takes return value and appends it to the tweets container
+    // takes return value and prepends it to the tweets container
     for (let item of tweets) {
       let $tweet = createTweetElement(item);
       $('#tweets-container').prepend($tweet);
@@ -25,12 +26,15 @@ $(document).ready(function (){
     };
 
   }
+
+  //function to escape script entries in the tweet box
   const escape = function (str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
   
+  //resets the form on tweet submit
   const resetForm = function () {
     const field = document.getElementById("tweet-text");
     const wordCount = document.getElementById("word-count");
@@ -40,7 +44,7 @@ $(document).ready(function (){
 
   }
 
-
+  //creates tweet elements to prepend it using the renderTweets()
   const createTweetElement = function(tweetObject){ 
 
     
@@ -68,7 +72,7 @@ $(document).ready(function (){
     return $tweet;
   }
   
-  
+  //handles tweet submission 
   const form = $('#submit-tweet');
   
   
@@ -97,6 +101,7 @@ $(document).ready(function (){
     }
   });
 
+  //reloads tweets on submit
   const loadTweets = function() {$.ajax({
     url: '/tweets',
     method: "GET",
@@ -111,11 +116,30 @@ $(document).ready(function (){
   })}
   loadTweets();
 
-  
- 
+  const buttonTop = $('#btnScrollToTop')
 
- 
+  buttonTop.on("click", () => {
+    topFunction();
+  })
 
+  window.onscroll = function() {
+    scrollFunction();
+  }
+
+  const scrollFunction = function () {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      buttonTop.fadeIn();
+    } else {
+      buttonTop.fadeOut();
+    }
+  }
+
+  function topFunction() {
+    document.documentElement.scrollTop = 0;
+    $(".new-tweet").slideDown(500);
+    $("#tweet-text").focus();
+  }
+ 
 });
 
 
