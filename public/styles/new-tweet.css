@@ -16,7 +16,7 @@
   flex-flow: wrap column;
   align-items: center;
   justify-content: space-between;
-  width: 45%;
+  width: 100%;
 }
 .new-tweet h2 {
   margin: 10px;

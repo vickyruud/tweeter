@@ -32,3 +32,27 @@ html {
 
 }
 
+@media all and (max-width: 600px) {
+  .container, body {
+    width: 100%;
+    
+  }
+}
+
+@media all and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-flow: wrap row;
+  }
+  .container{
+    width: 50%;
+  }
+  
+}
+
+
+ 
+
+
+
+
