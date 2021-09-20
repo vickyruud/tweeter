@@ -1,13 +1,14 @@
-.container {
+.container{
   display: flex;
   flex-flow: wrap column;
   align-items: center;
   justify-content: space-between;
   font-family: source sans pro, sans-serif;
   background-color: #adc7d8;
+  
 }
 
-.new-tweet {
+.new-tweet{
   display: flex;
   padding-top: 1px;
   background-color: #adc7d8;
@@ -17,18 +18,18 @@
   justify-content: space-between;
   width: 100%;
 }
-
 .new-tweet h2 {
   margin: 10px;
+  
   font-size: smaller;
 }
 
-label {
+label{
   padding: 10px;
   position: relative;
   font-size: smaller;
 }
-
+  
 textarea {
   width: 100%;
   border: none;
@@ -36,12 +37,10 @@ textarea {
   position: relative;
   background-color: #adc7d8;
 }
-
 button {
-  background-color: #4056A1;
+  background-color:#4056A1;
   color: #eeeeee;
 }
-
 .submitbutton {
   display: flex;
   justify-content: space-between;
@@ -53,6 +52,7 @@ button {
   position: fixed;
   align-self: flex-end;
   max-width: 100%;
+  
 }
 
 #scroll-up:hover {

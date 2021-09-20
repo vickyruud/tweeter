@@ -1,4 +1,4 @@
-.tweets {
+.tweets{
   display: flex;
   padding-top: 1px;
   margin: 10px;
@@ -7,12 +7,10 @@
   flex-direction: column;
   width: 100%;
 }
-
-.tweets:hover {
-  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.2);
+.tweets:hover{
+  box-shadow: 10px 10px 0px rgb(0 0 0 /0.2);
 }
-
-.tweet-container {
+.tweet-container{
   border-bottom: 5px solid black;
   margin: 0 15px;
   padding: 10px;
@@ -24,7 +22,7 @@
   flex-direction: column;
   align-items: center;
   width: 90%;
-  background-color: #adc7d8;
+  background-color: #adc7d8;;
   margin: 0 auto;
 }
 
@@ -38,6 +36,7 @@
   width: 30px;
 }
 
+
 .tweets footer {
   display: flex;
   align-items: flex-end;
@@ -46,31 +45,29 @@
   padding: 0;
 }
 
-#flag:hover {
+#flag:hover{
+  color: gold;
+}
+#heart:hover{
+  color: gold;
+}
+#retweet:hover{
   color: gold;
 }
 
-#heart:hover {
-  color: gold;
-}
-
-#retweet:hover {
-  color: gold;
-}
-
-.error {
+.error{
   border: 1px solid;
-  margin: 10px auto;
-  padding: 15px 10px 15px 50px;
-  background-repeat: no-repeat;
-  background-position: 10px center;
-  max-width: 460px;
+	margin: 10px auto;
+	padding: 15px 10px 15px 50px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	max-width: 460px;
   color: #D8000C;
-  background-color: #FFBABA;
-  background-image: url("https://i.imgur.com/GnyDvKN.png");
+	background-color: #FFBABA;
+	background-image: url('https://i.imgur.com/GnyDvKN.png');
 }
 
-#btnScrollToTop {
+#btnScrollToTop{
   position: fixed;
   align-self: flex-end;
   bottom: 10px;
@@ -83,8 +80,10 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   color: #ffffff;
   cursor: pointer;
+  
 }
 
-#btnScrollToTop:hover {
+#btnScrollToTop:hover{
   background-color: #070707;
+  
 }

@@ -6,7 +6,6 @@
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -14,34 +13,46 @@ html {
 /*
  * Global layout stuff
  */
-body {
+
+ body {
   color: #000000;
   background-color: #adc7d8;
   font-family: bungee, sans-serif;
   font-size: 24px;
 }
-
+  
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
 */
 .container {
   width: 90%;
-  background-color: #adc7d8;
+  background-color: #adc7d8;;
   margin: 0 auto;
+  
+
 }
 
 @media all and (max-width: 600px) {
   .container, body {
     width: 100%;
+    
   }
 }
+
 @media all and (min-width: 1024px) {
   body {
     display: flex;
     flex-flow: wrap row;
   }
-
-  .container {
+  .container{
     width: 50%;
   }
+  
 }
+
+
+ 
+
+
+
+

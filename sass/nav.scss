@@ -1,4 +1,4 @@
-#nav-bar {
+#nav-bar{
   display: flex;
   position: fixed;
   top: 0;
@@ -19,15 +19,15 @@
 .compose-family {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;  
   padding-top: 1em;
+  
 }
-
-.compose {
+.compose{
   margin: 0;
 }
 
-#compose-button {
+#compose-button{
   color: #d4260e;
 }
 
@@ -35,6 +35,15 @@
   #nav-bar {
     width: 100%;
     background-color: #4056A1;
-    background-image: none;
+    background-image: none;   
+        
   }
 }
+
+
+
+
+
+
+
+
