@@ -27,11 +27,13 @@ label {
   padding: 10px;
   position: relative;
   font-size: smaller;
+  font-weight: bold;
 }
 
 textarea {
   width: 100%;
   border: none;
+  outline: none;
   border-bottom: 5px solid black;
   position: relative;
   background-color: #adc7d8;
