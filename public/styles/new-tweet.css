@@ -1,62 +1,52 @@
 .container {
   display: flex;
-  flex-flow: wrap column;
   align-items: center;
   justify-content: space-between;
+  flex-flow: wrap column;
   font-family: source sans pro, sans-serif;
-  background-color: #adc7d8;
+  background-color: #74838d;
 }
-
-.new-tweet {
+.container .new-tweet {
   display: flex;
+  align-items: center;
   padding-top: 1px;
-  background-color: #adc7d8;
+  background-color: #74838d;
   margin: 0 2em;
   flex-flow: wrap column;
-  align-items: center;
   justify-content: space-between;
   width: 100%;
 }
-
-.new-tweet h2 {
-  margin: 10px;
-  font-size: smaller;
-}
-
-label {
+.container label {
   padding: 10px;
   position: relative;
   font-size: smaller;
   font-weight: bold;
 }
-
-textarea {
+.container textarea {
   width: 100%;
   border: none;
   outline: none;
   border-bottom: 5px solid black;
   position: relative;
-  background-color: #adc7d8;
+  background-color: #74838d;
 }
-
-button {
-  background-color: #4056A1;
+.container .error {
+  border: 1px solid;
+  margin: 10px auto;
+  padding: 15px 10px 15px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  max-width: 460px;
+  color: #D8000C;
+  background-color: #FFBABA;
+  background-image: url("https://i.imgur.com/GnyDvKN.png");
+}
+.container button {
   color: #eeeeee;
+  background-color: #4056A1;
 }
-
-.submitbutton {
+.container .submitbutton {
   display: flex;
   justify-content: space-between;
   font-family: bungee, sans-serif;
-}
-
-#scroll-up {
-  color: #4056A1;
-  position: fixed;
-  align-self: flex-end;
-  max-width: 100%;
-}
-
-#scroll-up:hover {
-  background-color: #000000;
 }

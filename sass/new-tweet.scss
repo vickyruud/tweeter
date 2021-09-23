@@ -1,60 +1,58 @@
+@import './variables';
+
 .container{
-  display: flex;
+  @include flexAlignCenter();
+  justify-content: space-between;
   flex-flow: wrap column;
-  align-items: center;
-  justify-content: space-between;
-  font-family: source sans pro, sans-serif;
-  background-color: #adc7d8;
+  font-family: $fontFamily;
+  background-color: $backgroundColor;
+  .new-tweet{
+    @include flexAlignCenter();
+    padding-top: 1px;
+    background-color: $backgroundColor;
+    margin: 0 2em;
+    flex-flow: wrap column;
+    justify-content: $justifyContent;
+    width: 100%;
+  }
+  label{
+    padding: 10px;
+    position: relative;
+    font-size: $smallFontSize;
+    font-weight: bold;
+  }
+  textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 5px solid black;
+    position: relative;
+    background-color: $backgroundColor;
+  }
+  .error{
+    border: 1px solid;
+    margin: 10px auto;
+    padding: 15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    max-width: 460px;
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('https://i.imgur.com/GnyDvKN.png');
+  }
+  button {
+    color: #eeeeee;
+    background-color:#4056A1;
+  }
+  .submitbutton {
+    display: flex;
+    justify-content: $justifyContent;
+    font-family: bungee, sans-serif;
+  }
+  
   
 }
 
-.new-tweet{
-  display: flex;
-  padding-top: 1px;
-  background-color: #adc7d8;
-  margin: 0 2em;
-  flex-flow: wrap column;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-.new-tweet h2 {
-  margin: 10px;
-  
-  font-size: smaller;
-}
 
-label{
-  padding: 10px;
-  position: relative;
-  font-size: smaller;
-}
   
-textarea {
-  width: 100%;
-  border: none;
-  border-bottom: 5px solid black;
-  position: relative;
-  background-color: #adc7d8;
-}
-button {
-  background-color:#4056A1;
-  color: #eeeeee;
-}
-.submitbutton {
-  display: flex;
-  justify-content: space-between;
-  font-family: bungee, sans-serif;
-}
 
-#scroll-up {
-  color: #4056A1;
-  position: fixed;
-  align-self: flex-end;
-  max-width: 100%;
-  
-}
-
-#scroll-up:hover {
-  background-color: #000000;
-}

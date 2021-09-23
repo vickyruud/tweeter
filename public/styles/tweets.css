@@ -2,29 +2,28 @@
   display: flex;
   padding-top: 1px;
   margin: 10px;
-  background-color: #adc7d8;
-  border: 0.5px solid black;
+  background-color: #74838d;
+  border: 0.5px solid #050505;
   flex-direction: column;
   width: 100%;
 }
-
 .tweets:hover {
   box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .tweet-container {
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid #050505;
   margin: 0 15px;
   padding: 10px;
 }
 
 #tweets-container {
   display: flex;
+  align-items: center;
   position: relative;
   flex-direction: column;
-  align-items: center;
   width: 90%;
-  background-color: #adc7d8;
+  background-color: #74838d;
   margin: 0 auto;
 }
 
@@ -58,33 +57,21 @@
   color: gold;
 }
 
-.error {
-  border: 1px solid;
-  margin: 10px auto;
-  padding: 15px 10px 15px 50px;
-  background-repeat: no-repeat;
-  background-position: 10px center;
-  max-width: 460px;
-  color: #D8000C;
-  background-color: #FFBABA;
-  background-image: url("https://i.imgur.com/GnyDvKN.png");
-}
-
 #btnScrollToTop {
   position: fixed;
   align-self: flex-end;
-  bottom: 60px;
+  bottom: 20px;
+  right: 28px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: 10px;
-  border-color: #D8000C;
+  border-color: #e62739;
   background: #e62739;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  color: #ffffff;
+  color: #050505;
   cursor: pointer;
 }
-
 #btnScrollToTop:hover {
   background-color: #070707;
 }

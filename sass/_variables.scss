@@ -1,0 +1,15 @@
+$headerBackgroundColor : #4a3e57;
+$headerImage : url(http://www.transparenttextures.com/patterns/black-linen.png);
+$fontFamily : source sans pro, sans-serif;
+$backgroundColor: #74838d;
+$flexDirection : column;
+$smallFontSize : smaller;
+$scrollTopColor: #e62739;
+$justifyContent: space-between;
+$navBarColor : #1b2349;
+$textColor: #050505;
+
+@mixin flexAlignCenter {
+  display: flex;
+  align-items: center;
+}

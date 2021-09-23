@@ -1,13 +1,14 @@
+@import "./variables";
+
 #header {
-  display: flex;
-  flex-direction: column;
+  @include flexAlignCenter();
+  justify-content: center;
+  flex-direction: $flexDirection;
   height: 400px;
   width: 100%;
-  align-items: center;
-  justify-content: center;
-  background-color: #6ea384;
+  background-color: $headerBackgroundColor;
   background-image: url(http://www.transparenttextures.com/patterns/black-linen.png);
-  font-family: source sans pro, sans-serif;
+  font-family: $fontFamily;
   color: antiquewhite;
 }
 
