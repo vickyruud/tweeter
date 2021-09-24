@@ -4,13 +4,13 @@
   justify-content: space-between;
   flex-flow: wrap column;
   font-family: source sans pro, sans-serif;
-  background-color: #74838d;
+  background-color: #becbd3;
 }
 .container .new-tweet {
   display: flex;
   align-items: center;
   padding-top: 1px;
-  background-color: #74838d;
+  background-color: #becbd3;
   margin: 0 2em;
   flex-flow: wrap column;
   justify-content: space-between;
@@ -28,7 +28,7 @@
   outline: none;
   border-bottom: 5px solid black;
   position: relative;
-  background-color: #74838d;
+  background-color: #becbd3;
 }
 .container .error {
   border: 1px solid;

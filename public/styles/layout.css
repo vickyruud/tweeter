@@ -16,7 +16,7 @@ html {
  */
 body {
   color: #050505;
-  background-color: #74838d;
+  background-color: #becbd3;
   font-family: bungee, sans-serif;
   font-size: 24px;
 }
@@ -26,7 +26,7 @@ body {
 */
 .container {
   width: 90%;
-  background-color: #74838d;
+  background-color: #becbd3;
   margin: 0 auto;
 }
 

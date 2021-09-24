@@ -3,10 +3,12 @@
   align-items: center;
   position: fixed;
   top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
   height: 150px;
   width: 100%;
   font-size: 20px;
-  background-color: #4a3e57;
+  background-color: #69597a;
   background-image: url(http://www.transparenttextures.com/patterns/black-linen.png);
   font-family: source sans pro, sans-serif;
   color: #ffffff;

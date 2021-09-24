@@ -48,13 +48,13 @@
 }
 
 #flag:hover{
-  color: gold;
+  color: $hoverColor;
 }
 #heart:hover{
-  color: gold;
+  color: $hoverColor;
 }
 #retweet:hover{
-  color: gold;
+  color: $hoverColor;
 }
 
 
@@ -63,7 +63,7 @@
   position: fixed;
   align-self: flex-end;
   bottom: 20px;
-  right: 28px;
+  right: 10px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -71,7 +71,7 @@
   border-color: $scrollTopColor;
   background: $scrollTopColor;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  color: $textColor;
+  color: #ffffff;
   cursor: pointer;
   &:hover{
     background-color: #070707;

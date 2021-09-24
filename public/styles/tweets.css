@@ -2,7 +2,7 @@
   display: flex;
   padding-top: 1px;
   margin: 10px;
-  background-color: #74838d;
+  background-color: #becbd3;
   border: 0.5px solid #050505;
   flex-direction: column;
   width: 100%;
@@ -23,7 +23,7 @@
   position: relative;
   flex-direction: column;
   width: 90%;
-  background-color: #74838d;
+  background-color: #becbd3;
   margin: 0 auto;
 }
 
@@ -46,22 +46,22 @@
 }
 
 #flag:hover {
-  color: gold;
+  color: #c55716;
 }
 
 #heart:hover {
-  color: gold;
+  color: #c55716;
 }
 
 #retweet:hover {
-  color: gold;
+  color: #c55716;
 }
 
 #btnScrollToTop {
   position: fixed;
   align-self: flex-end;
   bottom: 20px;
-  right: 28px;
+  right: 10px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -69,7 +69,7 @@
   border-color: #e62739;
   background: #e62739;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  color: #050505;
+  color: #ffffff;
   cursor: pointer;
 }
 #btnScrollToTop:hover {

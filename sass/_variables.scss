@@ -1,13 +1,14 @@
-$headerBackgroundColor : #4a3e57;
+$headerBackgroundColor : #69597a;
 $headerImage : url(http://www.transparenttextures.com/patterns/black-linen.png);
 $fontFamily : source sans pro, sans-serif;
-$backgroundColor: #74838d;
+$backgroundColor: #becbd3;
 $flexDirection : column;
 $smallFontSize : smaller;
 $scrollTopColor: #e62739;
 $justifyContent: space-between;
 $navBarColor : #1b2349;
 $textColor: #050505;
+$hoverColor: #c55716;
 
 @mixin flexAlignCenter {
   display: flex;
