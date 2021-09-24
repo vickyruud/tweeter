@@ -1,5 +1,61 @@
 @import './variables';
 
+@import './variables';
+
+.container{
+  @include flexAlignCenter();
+  justify-content: space-between;
+  flex-flow: wrap column;
+  font-family: $fontFamily;
+  background-color: $backgroundColor;
+  .new-tweet{
+    @include flexAlignCenter();
+    padding-top: 1px;
+    background-color: $backgroundColor;
+    margin: 0 2em;
+    flex-flow: wrap column;
+    justify-content: $justifyContent;
+    width: 100%;
+  }
+  label{
+    padding: 10px;
+    position: relative;
+    font-size: $smallFontSize;
+    font-weight: bold;
+  }
+  textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 5px solid black;
+    position: relative;
+    background-color: $backgroundColor;
+  }
+  .error{
+    border: 1px solid;
+    margin: 10px auto;
+    padding: 15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    max-width: 460px;
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('https://i.imgur.com/GnyDvKN.png');
+  }
+  button {
+    color: #eeeeee;
+    background-color:#4056A1;
+  }
+  .submitbutton {
+    display: flex;
+    justify-content: $justifyContent;
+    font-family: bungee, sans-serif;
+  }
+  
+  
+}
+
+
 .tweets{
   display: flex;
   padding-top: 1px;

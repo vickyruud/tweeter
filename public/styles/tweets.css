@@ -1,3 +1,56 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: wrap column;
+  font-family: source sans pro, sans-serif;
+  background-color: #becbd3;
+}
+.container .new-tweet {
+  display: flex;
+  align-items: center;
+  padding-top: 1px;
+  background-color: #becbd3;
+  margin: 0 2em;
+  flex-flow: wrap column;
+  justify-content: space-between;
+  width: 100%;
+}
+.container label {
+  padding: 10px;
+  position: relative;
+  font-size: smaller;
+  font-weight: bold;
+}
+.container textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 5px solid black;
+  position: relative;
+  background-color: #becbd3;
+}
+.container .error {
+  border: 1px solid;
+  margin: 10px auto;
+  padding: 15px 10px 15px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  max-width: 460px;
+  color: #D8000C;
+  background-color: #FFBABA;
+  background-image: url("https://i.imgur.com/GnyDvKN.png");
+}
+.container button {
+  color: #eeeeee;
+  background-color: #4056A1;
+}
+.container .submitbutton {
+  display: flex;
+  justify-content: space-between;
+  font-family: bungee, sans-serif;
+}
+
 .tweets {
   display: flex;
   padding-top: 1px;
