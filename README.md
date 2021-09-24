@@ -20,3 +20,7 @@ This repository is the starter code for the project: Students will fork and clon
 - SASS
 
 ## Screenshots
+
+!["Screenshot of Desktop View"](https://github.com/vickyruud/tweeter/blob/master/public/images/desktopView_Screenshot.png?raw=true)
+
+!["Screenshot of Mobile View"](https://github.com/vickyruud/tweeter/blob/master/public/images/mobileView_Screenshot.png?raw=true)
