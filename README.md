@@ -3,20 +3,20 @@
 Tweeter is a simple, single-page Twitter clone.
 
 This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
-## Screenshots
+### Screenshots
 
 !["Screenshot of Desktop View"](https://github.com/vickyruud/tweeter/blob/master/public/images/desktopView_Screenshot.png?raw=true)
 
 !["Screenshot of Mobile View"](https://github.com/vickyruud/tweeter/blob/master/public/images/mobileView_Screenshot.png?raw=true)
 
-## Getting Started
+### Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
 2. Install dependencies using the `npm install` command.
 3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 4. Go to <http://localhost:8080/> in your browser.
 
-## Dependencies
+### Dependencies
 
 - Express
 - Node 5.10.x or above
@@ -24,7 +24,7 @@ This repository is the starter code for the project: Students will fork and clon
 - Chance
 - SASS
 
-## User Guide
+### User Guide
 - Clicking on Compose Tweet will display a text box to write a tweet.
 - The maximum charaters for a tweet is 140. This is displayed under the text box on the right     side. 
 - The tweet should not be empty either.
