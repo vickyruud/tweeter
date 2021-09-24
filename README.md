@@ -26,7 +26,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 ### User Guide
 - Clicking on Compose Tweet will display a text box to write a tweet.
-- The maximum charaters for a tweet is 140. This is displayed under the text box on the right     side. 
+- The maximum charaters for a tweet is 140. This is displayed under the text box on the right     side.
+- If you go over the maximum character limit, the counter will turn red and into negative numbers.
 - The tweet should not be empty either.
+- An apporpriate error will be displayed if the character limits are not met.
 - As you start scrolling, you will notice a button on the bottom right side of the page. This button can be used to go back to the top. It will scroll to the top, display the the text box and place the cursor inside the box as well. 
 - Have fun Tweeting!!!! 
