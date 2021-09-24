@@ -3,6 +3,11 @@
 Tweeter is a simple, single-page Twitter clone.
 
 This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
+## Screenshots
+
+!["Screenshot of Desktop View"](https://github.com/vickyruud/tweeter/blob/master/public/images/desktopView_Screenshot.png?raw=true)
+
+!["Screenshot of Mobile View"](https://github.com/vickyruud/tweeter/blob/master/public/images/mobileView_Screenshot.png?raw=true)
 
 ## Getting Started
 
@@ -19,8 +24,9 @@ This repository is the starter code for the project: Students will fork and clon
 - Chance
 - SASS
 
-## Screenshots
-
-!["Screenshot of Desktop View"](https://github.com/vickyruud/tweeter/blob/master/public/images/desktopView_Screenshot.png?raw=true)
-
-!["Screenshot of Mobile View"](https://github.com/vickyruud/tweeter/blob/master/public/images/mobileView_Screenshot.png?raw=true)
+## User Guide
+- Clicking on Compose Tweet will display a text box to write a tweet.
+- The maximum charaters for a tweet is 140. This is displayed under the text box on the right     side. 
+- The tweet should not be empty either.
+- As you start scrolling, you will notice a button on the bottom right side of the page. This button can be used to go back to the top. It will scroll to the top, display the the text box and place the cursor inside the box as well. 
+- Have fun Tweeting!!!! 

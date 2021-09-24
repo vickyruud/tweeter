@@ -54,6 +54,7 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <!-- Compose tweet text area -->
       <section class="new-tweet" style="display: none;">
         <div class="error" id="over140" style="display:none;">Tweet should be less than 140 characters!</div>
         <div class="error" id="empty" style="display:none;">Tweet should not be empty!</div>
@@ -66,10 +67,12 @@
           </div>
         </form>
       </section>
+      <!-- Section to add new tweets -->
       <section id="tweets-container">
         
       </section>
       <script src="scripts/composer-char-counter.js"></script>
+      <!-- Scroll to top button -->
       <button  id="btnScrollToTop" style="display: none;">
         <i class="material-icons">keyboard_double_arrow_up</i> 
       </button>

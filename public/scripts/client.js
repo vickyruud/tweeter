@@ -7,8 +7,8 @@
 $(document).ready(function (){
 
 //Toggles the write new tweet form  
-  const composeFamily = $(".compose-family");
-  composeFamily.on("click", function() {
+  const $composeFamily = $(".compose-family");
+  $composeFamily.on("click", function() {
     $(".new-tweet").slideToggle(500);
     $("#compose-button").slideToggle(1000);
     $("#compose-button").slideToggle(1000);
@@ -117,6 +117,7 @@ $(document).ready(function (){
   })}
   loadTweets();
 
+  //button to scroll back to top
   const buttonTop = $('#btnScrollToTop')
 
   buttonTop.on("click", () => {
@@ -126,7 +127,7 @@ $(document).ready(function (){
   window.onscroll = function() {
     scrollFunction();
   }
-
+  //fades the scroll to top button in and out of view
   const scrollFunction = function () {
     if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
       buttonTop.fadeIn();
@@ -135,7 +136,7 @@ $(document).ready(function (){
     }
   }
 
-  function topFunction() {
+  const topFunction = function() {
     document.documentElement.scrollTop = 0;
     $(".new-tweet").slideDown(500);
     $("#tweet-text").focus();
